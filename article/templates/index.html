@@ -1,0 +1,27 @@
+<!--DOCTYPE html -->
+<html>
+
+<body>
+<div class='container'>
+{% block content %}
+
+<h1>
+{{ title }} is working
+</h1>
+
+{{ object_list }}<br/>
+
+{% for obj in object_list %}
+{{obj.title}}<br/>
+{{obj.content}}<br/>
+
+{% endfor %}
+
+{% endblock content %}
+
+</div>
+
+
+
+</body>
+</html>
